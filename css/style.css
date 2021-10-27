@@ -42,15 +42,16 @@ h2{width:100%;text-align:center; font-size:36px; }
 
 /* profile */
 #profile{width:1200px;margin:100px auto 0;padding:40px; box-sizing:border-box; border:5px solid #aaa; opacity:0;}
-#profile>div>img{width:300px;height:400px;float:left; background:#bfdfff;}
-#profile .profileWrap{margin:40px 0 0;float:left; font-size:16px;}
-#profile .profileWrap div{margin-left:47px;float:left;}
+#profile>div>img{width:300px;height:400px; background:#bfdfff;}
+#profile .profileWrap{margin:40px 0 0; font-size:16px;display:flex;}
+ .profileWrap div{margin-left:30px;}
 #profile .profileWrap .info{margin-top:50px;}
+#profile .profileWrap .first_line{display:flex;}
 #profile .profileWrap div li{line-height:200%;}
 #profile .profileWrap div strong{font-size:20px;}
 #profile .profileWrap .profile01{margin-left
 :0;}
-#profile .profileWrap .profile04{clear:both; width:100%;margin-top:30px; text-align:center;margin-left
+#profile .profileWrap .profile04{display:block;width:100%;margin-top:30px; text-align:center;margin-left
 :0;}
 #profile .profileWrap .profile04 ul{width:600px; margin:20px auto; }
 #profile .profileWrap .profile04 li{width:80px;height:135px;margin:0 10px;float:left;}
@@ -142,7 +143,35 @@ footer address{padding-top: 30px;
     line-height: 1.6;
     text-align: center;
 }
-@media screen and (min-width:320px) and (max-width:799px){
+@media screen and (max-width:426px){
+	body{width:100%;height:100%; font-size:16}
+	#header{width:100%; margin:0 auto;}
+	#header img{width:100%; margin:0 8.5rem;}
+	#menuWrap{width:100%; margin:0 auto;}
+	#menu{display:none;}
+	#main .inner{width:100%;}
+	#main .inner>div{width:100%;}
+	#main .typing{width:100%; font-size:1.8rem;}
+	
+	/* profile */
+	#profile{width:100%;margin:100px auto 0;padding:40px; box-sizing:border-box; border:5px solid #aaa; opacity:0;}
+	#profile>div>img{width:90%;height:auto;margin:0 1rem;}
+	#profile .profileWrap{margin:40px 0 0; font-size:16px; display:block;}
+	#profile .profileWrap div{margin:0 auto; margin-top:2rem; text-align:center; }
+	#profile .profileWrap .first_line{display:block;}
+	#profile .profileWrap .info{margin-top:50px;}
+	#profile .profileWrap div li{line-height:200%;}
+	#profile .profileWrap div strong{font-size:20px;}
+	#profile .profileWrap .profile01{margin-left
+	:0px;}
+	#profile .profileWrap .profile04{width:100%;margin-top:30px; text-align:center;margin-left
+	:0;}
+	#profile .profileWrap .profile04 ul{width:90%; margin:20px auto; }
+	
+    .p_photo{display:none;}
+	#floatdiv ul{display:none;}
+}
+@media screen and (min-width:427px) and (max-width:799px){
 	body{width:100%;height:100%;}
 	#header{width:100%; margin:0 auto;}
 	#menuWrap{width:100%; margin:0 auto;}
@@ -151,9 +180,10 @@ footer address{padding-top: 30px;
 	
 	/* profile */
 	#profile{width:100%;margin:100px auto 0;padding:40px; box-sizing:border-box; border:5px solid #aaa; opacity:0;}
-	#profile>div>img{width:300px;height:400px;float:left; background:#bfdfff;}
-	#profile .profileWrap{margin:40px 0 0;float:left; font-size:16px;}
-	#profile .profileWrap div{margin-left:47px;float:left;}
+	#profile>div>img{width:300px;height:400px;margin:0 11rem;}
+	#profile .profileWrap{margin:40px 0 0; font-size:16px;display:block;}
+	#profile .profileWrap div{margin-left:47px;}
+	#profile .profileWrap .first_line{display:block;}
 	#profile .profileWrap .info{margin-top:50px;}
 	#profile .profileWrap div li{line-height:200%;}
 	#profile .profileWrap div strong{font-size:20px;}
@@ -162,11 +192,7 @@ footer address{padding-top: 30px;
 	#profile .profileWrap .profile04{clear:both; width:100%;margin-top:30px; text-align:center;margin-left
 	:0;}
 	#profile .profileWrap .profile04 ul{width:90%; margin:20px auto; }
-	#profile .profileWrap .profile04 li{width:80px;height:135px;margin:0 10px;float:left;}
-	#profile .profileWrap .profile04 img{width:70px; height:auto;background:#fff;display:block;}
-	#profile .profileWrap .profile04 li:nth-child(4) img{margin-top:65px;}
-	#profile .profileWrap .profile04 li:nth-child(5) img,
-	#profile .profileWrap .profile04 li:nth-child(6) img{margin-top:25px;}
+	
 
 	
     .p_photo{display:none;}
